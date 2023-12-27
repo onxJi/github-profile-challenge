@@ -1,0 +1,23 @@
+.card-follow {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 200px;
+  height: 3.5rem;
+  border-radius: 10px;
+  background-color: #111729;
+  gap: 10px;
+}
+.line {
+  width: 1px;
+  height: 30px;
+  background-color: #4a5567;
+}
+
+.card-follow h5 {
+  color: #4a5567;
+}
+.card-follow p {
+  color: #cdd5e0;
+}

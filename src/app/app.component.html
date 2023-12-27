@@ -1,0 +1,24 @@
+<header>
+  <div class="textbox-container">
+    <img src="../assets/Search.svg" class="search-icon" />
+    <input type="text" class="textbox" placeholder="username" />
+  </div>
+</header>
+<main>
+
+  <div class="container">
+    <div class="container-avatar">
+      <div class="background-img">
+        <img [src]="profile.avatar_url" width="120px" height="120px" />
+      </div>
+
+    </div>
+    <div class="container-profile">
+      <app-card-follow [url]="profile.followers_url" [titulo]="'Followers'"></app-card-follow>
+      <app-card-follow></app-card-follow>
+      <app-card-follow></app-card-follow>
+    </div>
+  </div>
+
+
+</main>

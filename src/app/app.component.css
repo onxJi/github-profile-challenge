@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background-image: url("../assets/hero-image-github-profile.png");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: #364153;
+}
+.textbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #20293a;
+  border-radius: 10px;
+  color: #364153;
+  width: 20.5vw;
+  height: 3vw;
+  font-size: 1rem;
+  gap: 10px;
+  padding-left: 10px;
+}
+.textbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #364153;
+  border: none; /* Elimina el borde predeterminado */
+  outline: none; /* Elimina el contorno al hacer clic */
+  background-color: transparent;
+  font-size: 1.1rem;
+}
+
+.search-icon {
+  color: #364153;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.container-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+.container-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.background-img {
+  position: relative;
+  order: 1;
+  bottom: 50px;
+  padding: 10px;
+  width: 150px;
+}
+.background-img img {
+  order: 2;
+  padding: 10px;
+  background-color: #364153;
+  border-radius: 20px;
+}
