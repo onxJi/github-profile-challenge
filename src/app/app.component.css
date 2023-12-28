@@ -17,80 +17,120 @@ header {
 main {
   background-color: #364153;
 }
+/* Contenedor principal */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Textbox Container */
 .textbox-container {
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  grid-column: span 6; /* O ajusta según tus necesidades */
   background-color: #20293a;
   border-radius: 10px;
   color: #364153;
-  width: 20.5vw;
-  height: 3vw;
-  font-size: 1rem;
-  gap: 10px;
-  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px;
 }
+
+/* Textbox */
 .textbox {
+  grid-column: span 6; /* O ajusta según tus necesidades */
   display: flex;
   align-items: center;
   justify-content: center;
   color: #364153;
-  border: none; /* Elimina el borde predeterminado */
-  outline: none; /* Elimina el contorno al hacer clic */
+  border: none;
+  outline: none;
   background-color: transparent;
   font-size: 1.1rem;
 }
 
-.search-icon {
-  color: #364153;
-}
-
+/* Otros contenedores */
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.container-grid {
   display: flex;
   align-items: left;
   justify-content: left;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
   flex-direction: column;
 }
+
 .container-profile {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   gap: 20px;
   padding-bottom: 60px;
+  flex-wrap: wrap;
+  padding: 10px;
 }
+
 .container-header-profile {
+  grid-column: span 12;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: row;
 }
+
 .container-avatar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
+
 .background-img {
   position: relative;
   order: 1;
   bottom: 50px;
   padding: 10px;
-  width: 150px;
 }
+
 .background-img img {
   order: 2;
   padding: 10px;
   background-color: #364153;
   border-radius: 20px;
 }
+
 .profile-description {
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  flex-direction: column;
+  text-align: left;
+  && p {
+    color: #cdd5e0;
+  }
+  && h1 {
+    color: #cdd5e0;
+  }
 }
+
 .profile-description-container {
   display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.content-repos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Alinea los elementos hacia arriba en el eje transversal */
+  justify-content: center;
+  gap: 20px;
+}
+app-card-repo {
+  flex-basis: calc(
+    50% - 10px
+  ); /* Ancho del 50% menos el espacio entre los elementos */
 }

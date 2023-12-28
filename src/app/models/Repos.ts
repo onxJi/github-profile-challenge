@@ -68,7 +68,7 @@ export interface Repos {
     archived: boolean;
     disabled: boolean;
     open_issues_count: number;
-    license: null;
+    license: License;
     allow_forking: boolean;
     is_template: boolean;
     web_commit_signoff_required: boolean;
@@ -99,4 +99,11 @@ export interface Owner {
     received_events_url: string;
     type: string;
     site_admin: boolean;
+}
+export interface License {
+    key: string;
+    name: string;
+    spdx_id: string;
+    url: string;
+    node_id: string;
 }

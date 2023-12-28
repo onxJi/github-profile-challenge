@@ -1,0 +1,11 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  background-color: #1d1b48;
+  width: 300px;
+  && p {
+    color: #cdd5e0;
+  }
+}

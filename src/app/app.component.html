@@ -5,29 +5,44 @@
   </div>
 </header>
 <main>
-
   <div class="container">
-    <div class="container-header-profile">
-      <div class="container-avatar">
-        <div class="background-img">
-          <img [src]="profile.avatar_url" width="120px" height="120px" />
+    <div class="container-grid">
+      <div class="container-header-profile">
+        <div class="container-avatar">
+          <div class="background-img">
+            <img [src]="profile.avatar_url" width="120px" height="120px" />
+          </div>
         </div>
-
+        <div class="container-profile">
+          <app-card-follow
+            [titulo]="'Followers'"
+            [total]="profile.followers"
+          ></app-card-follow>
+          <app-card-follow
+            [titulo]="'Following'"
+            [total]="profile.following"
+          ></app-card-follow>
+          <app-card-follow
+            [titulo]="'Location'"
+            [description]="profile.location"
+          ></app-card-follow>
+        </div>
       </div>
-      <div class="container-profile">
-        <app-card-follow [titulo]="'Followers'" [total]="profile.followers"></app-card-follow>
-        <app-card-follow [titulo]="'Following'" [total]="profile.following"></app-card-follow>
-        <app-card-follow [titulo]="'Location'" [description]="profile.location"></app-card-follow>
+      <div class="profile-description-container">
+        <div class="profile-description">
+          <h1>{{ profile.name }}</h1>
+          <p>{{ profile.bio }}</p>
+        </div>
       </div>
     </div>
-    <div class="profile-description-container">
-      <div class="profile-description">
-        <h1>{{profile.name}}</h1>
-        <p>{{profile.bio}}</p>
-      </div>
+    <div class="content-repos">
+      @for (item of repos; track $index) {
+      <app-card-repo
+        [name]="item.name"
+        [description]="item.description"
+        [forks_count]="item.forks_count"
+      ></app-card-repo>
+      }
     </div>
-
   </div>
-
-
 </main>
