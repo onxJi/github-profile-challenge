@@ -11,12 +11,12 @@ import { ApiServiceImplementation } from '../../services/ApiServiceImplementatio
 })
 export class CardFollowComponent implements OnInit {
   @Input() titulo: string = "titulo de card";
-  @Input() total: number = 0;
+  @Input() total: number;
   @Input() url: string;
+  @Input() description: string;
   constructor(private apiService: ApiServiceImplementation) {
 
   }
-  async ngOnInit(): Promise<void> {
-    this.total = (await this.apiService.getFollowers(this.url)).length;
+  ngOnInit(): void {
   }
 }

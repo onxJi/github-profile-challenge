@@ -1,5 +1,9 @@
 <div class="card-follow">
     <h5>{{titulo}}</h5>
     <div class="line"></div>
+    @if (total >= 0) {
     <p>{{total}}</p>
+    }@else{
+    <p>{{description}}</p>
+    }
 </div>

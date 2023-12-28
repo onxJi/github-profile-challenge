@@ -47,10 +47,11 @@ main {
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  flex-direction: column;
 }
 .container-profile {
   display: flex;
@@ -58,6 +59,12 @@ main {
   justify-content: center;
   gap: 20px;
   padding-bottom: 60px;
+}
+.container-header-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 .container-avatar {
   display: flex;
@@ -77,4 +84,13 @@ main {
   padding: 10px;
   background-color: #364153;
   border-radius: 20px;
+}
+.profile-description {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile-description-container {
+  display: flex;
 }

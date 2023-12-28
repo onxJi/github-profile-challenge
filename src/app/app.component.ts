@@ -20,12 +20,14 @@ export class AppComponent implements OnInit {
   title = 'github-profile-challenge';
   image_avatar: string = "../assets/hero-image-github-profile.png";
   profile: Profile;
+  total: number;
   constructor(private apiService: ApiServiceImplementation) {
 
   }
   async ngOnInit(): Promise<void> {
     this.profile = await this.apiService.getProfileContent();
     console.log(this.profile)
+
   }
 
 }

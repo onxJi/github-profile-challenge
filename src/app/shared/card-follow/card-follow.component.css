@@ -3,7 +3,9 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  width: 200px;
+  width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   height: 3.5rem;
   border-radius: 10px;
   background-color: #111729;

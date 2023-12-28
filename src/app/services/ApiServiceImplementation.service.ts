@@ -37,7 +37,7 @@ export class ApiServiceImplementation implements IApiService {
         return objFollow;
     }
     async getProfileContent(): Promise<Profile> {
-        const url = this._apiUrl + "/onxJi";
+        const url = this._apiUrl + "/github";
         let objProfile: Profile = {} as Profile;
         try {
             await fetch(url)
