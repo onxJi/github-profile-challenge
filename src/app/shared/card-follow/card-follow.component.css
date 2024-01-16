@@ -4,12 +4,12 @@
   justify-content: space-evenly;
   flex-direction: row;
   width: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  height: 3.5rem;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 3.3rem;
   border-radius: 10px;
   background-color: #111729;
-  gap: 10px;
+  gap: 20px;
 }
 .line {
   width: 1px;
